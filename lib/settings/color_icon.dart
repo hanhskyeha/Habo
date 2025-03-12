@@ -70,7 +70,7 @@ class _ColorIconState extends State<ColorIcon> {
                           actions: <Widget>[
                             ElevatedButton(
                               style: ButtonStyle(
-                                padding: MaterialStateProperty.all<EdgeInsets>(
+                                padding: WidgetStateProperty.all<EdgeInsets>(
                                   const EdgeInsets.symmetric(
                                       vertical: 10, horizontal: 20),
                                 ),
@@ -96,9 +96,8 @@ class _ColorIconState extends State<ColorIcon> {
                                 foregroundColor:
                                     const MaterialStatePropertyAll<Color>(
                                         Colors.white),
-                                backgroundColor:
-                                    MaterialStatePropertyAll<Color>(
-                                        widget.defaultColor),
+                                backgroundColor: WidgetStatePropertyAll<Color>(
+                                    widget.defaultColor),
                               ),
                               onPressed: () {
                                 setState(

@@ -150,7 +150,7 @@ Color getSwitchTrackColor(Set<MaterialState> states) {
     return const Color(0xFF505050);
   }
 
-  if (states.contains(MaterialState.selected)) {
+  if (states.contains(WidgetState.selected)) {
     return HaboColors.primary;
   }
 
